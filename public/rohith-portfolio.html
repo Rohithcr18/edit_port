@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohith CR - Video Editor & Designer</title>
+    <link rel="icon" type="image/png" href="titlelogo.png" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="App">
+        <div class="bg-anim"></div>
+        <div class="orbs">
+            <span class="orb large" style="top: 8%; left: 6%;"></span>
+            <span class="orb" style="top: 30%; left: 80%;"></span>
+            <span class="orb small orb-pink" style="top: 65%; left: 12%;"></span>
+            <span class="orb" style="top: 78%; left: 70%;"></span>
+            <span class="orb small" style="top: 45%; left: 45%;"></span>
+        </div>
+        <div class="vignette"></div>
+        <div class="film-grain"></div>
+
+        <div class="animated-bg">
+            <!-- Navigation -->
+            <nav class="nav-bar" id="navbar">
+                <div class="nav-content">
+                    <div class="about-name">ROHITH CR</div>
+                    <div class="nav-links">
+                        <a href="#" onclick="scrollToSection('hero')">Home</a>
+                        <a href="#" onclick="scrollToSection('about')">About</a>
+                        <a href="#" onclick="scrollToSection('skills')">Skills</a>
+                        <a href="#" onclick="scrollToSection('work')">Work</a>
+                        <a href="#" onclick="scrollToSection('contact')">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="section hero-section" id="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title" id="heroTitle">ROHITH CR</h1>
+                    <p class="hero-subtitle" id="heroSubtitle">Video Editor & Poster Designer</p>
+                    <p class="hero-description" id="heroDescription">
+                        Creating compelling visual narratives that engage, inspire, and leave lasting impressions through innovative editing techniques and creative storytelling.
+                    </p>
+                    <div class="social-links">
+                        <a class="social-btn" href="https://www.linkedin.com/in/rohithcr2006/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
+                                <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.944v5.662H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.369-1.852 3.602 0 4.267 2.371 4.267 5.455v6.288zM5.337 7.433a2.064 2.064 0 1 1 0-4.129 2.064 2.064 0 0 1 0 4.129zM7.114 20.452H3.558V9h3.556v11.452z"/>
+                            </svg>
+                        </a>
+                        <a class="social-btn" href="https://www.instagram.com/cr__editzz_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
+                                <path fill="currentColor" d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm11 1a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="cta-button" id="ctaButton" onclick="scrollToSection('work')">
+                        View My Work
+                    </button>
+                </div>
+                <div class="scroll-indicator" id="scrollIndicator">
+                    <div style="color: white; font-size: 1.2rem;">↓</div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="section about-section" id="about">
+                <div class="about-container">
+                    <div class="about-text">
+                        <h2 class="section-title">About Me</h2>
+                        <p class="about-name">ROHITH C R</p>
+                        <p class="about-description">
+                            I'm a passionate video editor with over 3 years of experience in creating compelling visual stories. From music videos to corporate content, I bring creativity and technical expertise to every project.
+                        </p>
+                        <ul class="skills-list">
+                            <li>Video Editing</li>
+                            <li>Poster Design</li>
+                            <li>Logo Design</li>
+                            <li>Text Animation</li>
+                            <li>Script Writing</li>
+                            <li>AI Video Creator</li>
+                        </ul>
+                    </div>
+                    <div class="about-visual">
+                        <div class="profile-visual">
+                            <img src="profile.png" alt="Rohith CR Profile" class="profile-image" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="section skills-section" id="skills">
+                <div class="skills-container">
+                    <div class="skills-columns">
+                        <div class="skills-column">
+                            <h2 class="section-title">My Skills</h2>
+                            <ul class="skills-list">
+                                <li>Video Editing</li>
+                                <li>Poster Design</li>
+                                <li>Logo Design</li>
+                                <li>Text Animation</li>
+                                <li>Script Writing</li>
+                                <li>AI Video Creator</li>
+                            </ul>
+                        </div>
+                        <div class="skills-column">
+                            <h2 class="section-title">Software Knows</h2>
+                            <ul class="software-list">
+                                <li><button type="button" class="software-chip">DaVinci Resolve</button></li>
+                                <li><button type="button" class="software-chip">Adobe Photoshop</button></li>
+                                <li><button type="button" class="software-chip">Canva</button></li>
+                                <li><button type="button" class="software-chip">Figma</button></li>
+                                <li><button type="button" class="software-chip">CapCut</button></li>
+                                <li><button type="button" class="software-chip">Adobe After Effects</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work Section -->
+            <section class="section work-section" id="work">
+                <div class="work-container">
+                    <h2 class="section-title">Works done</h2>
+                    <div class="folder-buttons">
+                        <a class="folder-btn active" href="https://drive.google.com/drive/folders/1tbmDVkEd8j4tXem_jPSBI2R3PT7OyuTn?usp=drive_link" target="_blank" rel="noopener noreferrer">Posters ↗</a>
+                        <a class="folder-btn" href="https://drive.google.com/drive/folders/1Sr1fA6ssn2GfX0xWbUsJKoNbf-xQGVc2?usp=drive_link" target="_blank" rel="noopener noreferrer">Logos ↗</a>
+                        <a class="folder-btn" href="https://drive.google.com/drive/folders/1Pber3pHeKxOJk8F-q8M78v9s4qn3Jfxs?usp=drive_link" target="_blank" rel="noopener noreferrer">DaVinci ↗</a>
+                        <a class="folder-btn" href="https://drive.google.com/drive/folders/1FbO_JhjubAQZStkBkvGzXk35XowLjdmn?usp=drive_link" target="_blank" rel="noopener noreferrer">Certificates ↗</a>
+                        <a class="folder-btn" href="https://drive.google.com/drive/folders/1NQEg7vGVwFGhL49ZV_7-R2anzJ_XFV9R?usp=drive_link" target="_blank" rel="noopener noreferrer">CapCut ↗</a>
+                        <a class="folder-btn" href="https://drive.google.com/drive/folders/19dnnao4OsCvx-phcfiL2uLXvuEh5vNUG?usp=drive_link" target="_blank" rel="noopener noreferrer">After Effects ↗</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section contact-section" id="contact">
+                <div class="contact-container">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="about-description" style="text-align: center; margin: 0 auto 50px;">
+                        Ready to bring your vision to life? Let's discuss your next project.
+                    </p>
+
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">
+                                <a href="mailto:rohithrt1402@gmail.com">rohithrt1402@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-label">Phone</div>
+                            <div class="contact-value">
+                                <a href="tel:+919842868885">+91 98428 68885</a>
+                            </div>
+                        </div>
+
+                        <a class="contact-item" href="https://www.linkedin.com/in/rohithcr2006/" target="_blank" rel="noopener noreferrer">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                                    <path fill="#00d4ff" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.944v5.662H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.369-1.852 3.602 0 4.267 2.371 4.267 5.455v6.288zM5.337 7.433a2.064 2.064 0 1 1 0-4.129 2.064 2.064 0 0 1 0 4.129zM7.114 20.452H3.558V9h3.556v11.452z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-label">LinkedIn</div>
+                            <div class="contact-value">linkedin.com/in/rohithcr2006</div>
+                        </a>
+
+                        <a class="contact-item" href="https://www.instagram.com/cr__editzz_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                                    <path fill="#00d4ff" d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm11 1a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-label">Instagram</div>
+                            <div class="contact-value">@cr__editzz_</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script>
+        // Scroll to section function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Initialize animations when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize GSAP animations
+            setTimeout(() => {
+                if (window.gsap) {
+                    const gsap = window.gsap;
+                    if (window.ScrollTrigger) {
+                        gsap.registerPlugin(window.ScrollTrigger);
+                    }
+
+                    // Split hero title into characters for cinematic stagger
+                    const titleEl = document.getElementById('heroTitle');
+                    if (titleEl && !titleEl.dataset.split) {
+                        const text = titleEl.textContent.trim();
+                        titleEl.dataset.split = 'true';
+                        titleEl.innerHTML = text.split('').map(ch => `<span class="char">${ch === ' ' ? '&nbsp;' : ch}</span>`).join('');
+                    }
+
+                    gsap.to('#heroTitle', { opacity: 1, y: 0, duration: 1, delay: 0.5 });
+                    gsap.to('#heroTitle .char', { 
+                        opacity: 1,
+                        y: 0,
+                        filter: 'blur(0px)',
+                        duration: 0.9,
+                        ease: 'power3.out',
+                        stagger: 0.035,
+                        delay: 0.7
+                    });
+                    gsap.to('#heroSubtitle', { opacity: 1, y: 0, duration: 1, delay: 0.8 });
+                    gsap.to('#heroDescription', { opacity: 1, y: 0, duration: 1, delay: 1.1 });
+                    gsap.to('#ctaButton', { opacity: 1, y: 0, duration: 1, delay: 1.4 });
+                    gsap.to('#scrollIndicator', { opacity: 1, duration: 1, delay: 2 });
+                    gsap.to('#navbar', { opacity: 1, y: 0, duration: 1, delay: 1.8 });
+
+                    // ScrollTrigger cinematic reveals for sections
+                    if (window.ScrollTrigger) {
+                        gsap.utils.toArray('.section').forEach((sec) => {
+                            if (sec.id === 'hero') return;
+                            const tl = gsap.timeline({
+                                scrollTrigger: {
+                                    trigger: sec,
+                                    start: 'top 70%',
+                                    toggleActions: 'play none none reverse'
+                                }
+                            });
+                            tl.from(sec.querySelector('.section-title'), { y: 40, opacity: 0, duration: 0.6, ease: 'power2.out' });
+                            const items = sec.querySelectorAll('p, li, .skills-column, .software-chip, .contact-item, .work-drive-link .btn');
+                            if (items.length) {
+                                tl.from(items, { y: 30, opacity: 0, duration: 0.5, stagger: 0.06, ease: 'power2.out' }, '-=0.2');
+                            }
+                        });
+                    }
+
+                    // Parallax orbs: subtle float on scroll
+                    const orbs = document.querySelectorAll('.orb');
+                    if (orbs.length) {
+                        orbs.forEach((orb, i) => {
+                            const speed = (i % 3 + 1) * 10; // 10,20,30
+                            if (window.ScrollTrigger) {
+                                gsap.to(orb, {
+                                    yPercent: gsap.utils.random(-10, 10),
+                                    xPercent: gsap.utils.random(-10, 10),
+                                    ease: 'none',
+                                    scrollTrigger: {
+                                        trigger: document.body,
+                                        start: 'top top',
+                                        end: 'bottom bottom',
+                                        scrub: true
+                                    }
+                                });
+                            }
+                            // Gentle idle float
+                            gsap.to(orb, { y: '+=15', duration: 4 + (i%3), yoyo: true, repeat: -1, ease: 'sine.inOut' });
+                        });
+
+                        // Mouse parallax
+                        let mouseX = 0, mouseY = 0;
+                        window.addEventListener('mousemove', (e) => {
+                            const cx = window.innerWidth / 2;
+                            const cy = window.innerHeight / 2;
+                            mouseX = (e.clientX - cx) / cx;
+                            mouseY = (e.clientY - cy) / cy;
+                        });
+                        function raf() {
+                            orbs.forEach((orb, i) => {
+                                const depth = (i % 3 + 1) * 4; // 4,8,12
+                                const tx = -mouseX * depth;
+                                const ty = -mouseY * depth;
+                                orb.style.transform = `translate(${tx}px, ${ty}px)`;
+                            });
+                            requestAnimationFrame(raf);
+                        }
+                        requestAnimationFrame(raf);
+                    }
+                }
+            }, 100);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    const targetId = href.substring(1);
+                    scrollToSection(targetId);
+                }
+            });
+        });
+
+        // Add scroll effect to navbar (toggle shadow class)
+        function updateNavbarShadow() {
+            const navbar = document.getElementById('navbar');
+            if (!navbar) return;
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+        window.addEventListener('scroll', updateNavbarShadow);
+        updateNavbarShadow();
+
+        // Add intersection observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for scroll animations
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Add hover effects to contact items
+        document.querySelectorAll('.contact-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Removed interactive hover effects on software chips (no animation for buttons)
+
+        // Removed click scale effects on CTA button (no animation for buttons)
+
+        // Add parallax effect to background
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            const bgAnim = document.querySelector('.bg-anim');
+            if (bgAnim) {
+                bgAnim.style.transform = `translateY(${rate}px)`;
+            }
+        });
+
+        // Add typing effect to hero title (optional enhancement)
+        function typeEffect(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            element.style.opacity = '1';
+            
+            function typeWriter() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+            typeWriter();
+        }
+
+        // Initialize typing effect after GSAP animation
+        setTimeout(() => {
+            const heroTitle = document.getElementById('heroTitle');
+            if (heroTitle) {
+                // Comment out the typing effect by default, uncomment if desired
+                // typeEffect(heroTitle, 'ROHITH C R', 150);
+            }
+        }, 1000);
+
+        // Add smooth reveal animation for skills and about sections
+        const revealElements = document.querySelectorAll('.skills-list li, .software-chip, .contact-item');
+        
+        const revealObserver = new IntersectionObserver(function(entries) {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease';
+            revealObserver.observe(el);
+        });
+
+        // Add active state to navigation based on scroll position
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('onclick').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+
+        // Add CSS for active nav state (strong glow)
+        const style = document.createElement('style');
+        style.textContent = `
+            .nav-links a.active {
+                color: #0ff !important;
+                position: relative;
+                background: rgba(0,212,255,0.15) !important;
+                box-shadow: 0 0 14px rgba(0,212,255,0.7), 0 0 34px rgba(192,132,252,0.45);
+            }
+            
+            .nav-links a.active::after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: #00d4ff;
+                border-radius: 1px;
+            }
+            
+            .skills-list li,
+            .software-chip,
+            .contact-item {
+                transition: all 0.6s ease;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.5s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Console log for debugging (remove in production)
+        console.log('Portfolio website loaded successfully!');
+        console.log('GSAP loaded:', !!window.gsap);
+    </script>
+</body>
+</html>
