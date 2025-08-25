@@ -293,7 +293,7 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(3.5rem, 12vw, 10rem);
+    font-size: clamp(2.6rem, 9vw, 6.0rem);
     font-weight: 900;
     letter-spacing: 0.12em;
     line-height: 0.9;
@@ -380,7 +380,7 @@ body {
 
 .cta-button {
     background: linear-gradient(45deg, #667eea, #764ba2);
-    border: none;
+    border: 2px solid rgba(0, 212, 255, 0.6);
     color: white;
     padding: 18px 50px;
     font-size: 1.1rem;
@@ -400,6 +400,12 @@ body {
 .cta-button:hover {
     transform: translateY(-5px);
     box-shadow: 0 25px 50px rgba(102,126,234,0.5);
+}
+
+/* Strong visible outline when focused for accessibility */
+.cta-button:focus-visible {
+    outline: 3px solid rgba(0, 212, 255, 0.75);
+    outline-offset: 2px;
 }
 
 .scroll-indicator {
@@ -914,6 +920,80 @@ body {
   box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.25);
 }
 
+/* ==========================
+   Light-like outline for all buttons/interactive chips
+   ========================== */
+button,
+.btn,
+.btn-primary,
+.cta-button,
+.nav-links a,
+.social-btn,
+.filter-btn,
+.folder-btn,
+.work-drive-link .btn,
+.software-list li .software-chip {
+  /* Base neon outline */
+  border-color: rgba(0, 212, 255, 0.6) !important;
+  box-shadow:
+    0 0 0 2px rgba(0, 212, 255, 0.25) inset,
+    0 0 10px rgba(0, 212, 255, 0.45),
+    0 0 24px rgba(192, 132, 252, 0.3);
+}
+
+/* Stronger glow on hover/focus (no animations required) */
+button:hover, button:focus-visible,
+.btn:hover, .btn:focus-visible,
+.btn-primary:hover, .btn-primary:focus-visible,
+.cta-button:hover, .cta-button:focus-visible,
+.nav-links a:hover, .nav-links a:focus-visible,
+.social-btn:hover, .social-btn:focus-visible,
+.filter-btn:hover, .filter-btn:focus-visible,
+.folder-btn:hover, .folder-btn:focus-visible,
+.work-drive-link .btn:hover, .work-drive-link .btn:focus-visible,
+.software-list li .software-chip:hover, .software-list li .software-chip:focus-visible {
+  border-color: rgba(0, 212, 255, 0.9) !important;
+  box-shadow:
+    0 0 0 2px rgba(0, 212, 255, 0.35) inset,
+    0 0 14px rgba(0, 212, 255, 0.65),
+    0 0 34px rgba(192, 132, 252, 0.45);
+}
+
+/* ==========================
+   Global Animation Kill Switch
+   Apply by adding class "disable-animations" on <html>
+   ========================== */
+html.disable-animations *,
+html.disable-animations *::before,
+html.disable-animations *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+html.disable-animations .hero-title,
+html.disable-animations .hero-subtitle,
+html.disable-animations .hero-description,
+html.disable-animations #ctaButton,
+html.disable-animations #scrollIndicator,
+html.disable-animations #navbar {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+html.disable-animations .bg-anim,
+html.disable-animations .bg-anim::before,
+html.disable-animations .bg-anim::after,
+html.disable-animations .film-grain,
+html.disable-animations .hero-section::before,
+html.disable-animations .hero-section::after,
+html.disable-animations .skills-section::before,
+html.disable-animations .work-section::before {
+  animation: none !important;
+}
+
+html.disable-animations .orb { animation: none !important; }
+
 @media (max-width: 768px) {
   .skills-columns {
     grid-template-columns: 1fr;
@@ -1187,3 +1267,4 @@ body {
         height: 200px;
     }
 }
+.
